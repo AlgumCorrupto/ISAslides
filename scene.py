@@ -499,9 +499,19 @@ class Scn(Slide):
         self.wait()
     
     def do_pl(self):
+        title = Text("Pipeline")
+        title.to_edge(UL)
+        points = BulletedList(
+            "Técnica para processar instruções\\\\de forma paralela.",
+            "CPUs como as das famílias amd64 e arm\\\\ implementam pipelines."
+        )
+        self.play(Write(title))
+        self.play(Write(points))
+        self.next_slide()
+        self.fadeAll()
         title = Text("Sem pipeline")
         title.to_edge(UL)
-        self.add(title)
+        self.play(Write(title))
         ins0 = self.makeInstrLine("INS_0")
         ins1 = self.makeInstrLine("INS_1") 
         ins2 = self.makeInstrLine("INS_2") 
