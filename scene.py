@@ -121,7 +121,7 @@ class Scn(Slide):
             "$>$ $<$: incrementa/decrementa o memory pointer.",
             "$[$ $]$: instruções de looping.\\\\", 
             "$[$: vai para o $]$ correspondente\\\\se o valor apontado for 0.\\\\", 
-            "$]$: vai para o $[$ correspondene\\\\se o valor apontado for diferente de 0."
+            "$]$: vai para o $[$ correspondente\\\\se o valor apontado for diferente de 0."
         )
         self.play(Write(points))
 
